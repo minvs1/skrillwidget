@@ -1,0 +1,207 @@
+#page-static-buy-neteller
+  background: #F6F6F6
+  
+  #root
+    display: flex
+    justify-content: center
+    background: #fff
+    
+    .page-header
+      width: 100%
+      padding: 60px 0
+      background: #283c86
+      background: -webkit-linear-gradient(to right, #45a14d, #32865c)
+      background: linear-gradient(to right, #45a14d, #32865c)
+      margin: 0
+      
+      & > div
+        display: flex
+        justify-content: space-between
+        max-width: 2000px
+        margin: 0 auto
+        
+        & > div
+          flex: 1
+          display: flex
+          flex-direction: column
+          align-items: center
+          margin: 0 18px
+          
+          & > div
+            width: 100%
+            max-width: 500px
+          
+          &:first-child
+            justify-content: center
+            
+            & > div
+              h1
+                color: rgba(255, 255, 255, 1)
+                font-weight: 500
+                font-size: 42px
+                margin-bottom: 26px
+                
+              p
+                color: rgba(255, 255, 255, 0.9)
+                font-size: 18px
+                font-weight: 500
+            
+          &:last-child
+            display: flex
+            flex-direction: column
+            align-items: center
+            
+            & > div
+              display: flex
+              flex-direction: column
+              align-items: flex-end
+            
+    .supported-coins
+      box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2)
+      
+      & > div
+        display: flex
+        justify-content: space-around
+        align-items: center
+        max-width: 1277px
+        margin: 0 auto
+        overflow-x: auto
+        
+        span
+          display: flex
+          align-items: center
+          justify-content: center
+          height: 60px
+          padding: 6px
+        
+        img
+          height: 32px
+          
+    .steps
+      margin: 100px 15px 0 15px
+      
+      & > div
+        display: flex
+        justify-content: space-around
+        align-items: center
+        max-width: 1245px
+        margin: 0 auto
+        flex-wrap: wrap
+        
+        & > div
+          display: flex
+          margin-bottom: 30px
+          
+          & > div
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 30px
+            width: 30px
+            border: 1px solid #9F3970
+            border-radius: 90px
+            padding-left: 1px
+            padding-bottom: 1px
+            color: #9F3970
+        
+          & > h3
+            width: 165px
+            text-align: center
+            margin-left: 6px
+            color: rgba(0, 0, 0, 0.77)
+            font-size: 14px
+          
+    .benefits-of-neteller
+      margin-top: 70px
+      margin-bottom: 100px
+      text-align: center
+      
+      & > div
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 1245px
+        margin: 0 auto
+        
+        h2
+          text-align: center
+          width: 100%
+          color: rgba(0, 0, 0, 0.75)
+          font-weight: 300
+          margin-bottom: 60px
+          
+        & > div
+          display: flex
+          justify-content: space-between
+          width: 100%
+          
+          &:first-child
+            margin-right: 0
+          
+          &:last-child
+            margin-left: 0
+          
+          & > div
+            margin: 0 20px
+            
+            p
+              padding: 0 12px
+              
+    .looking-for-other
+      margin: -15px 5px 85px 20px
+      
+      & > div
+        display: flex
+        flex-direction: row
+        align-items: center
+        max-width: 1245px
+        margin: 0 auto
+        
+        h2
+          font-size: 28px
+          color: rgba(0, 0, 0, 0.75)
+          font-weight: 300
+          margin-bottom: 40px
+          
+        p 
+          margin-bottom: 20px
+    
+@media (max-width: 1040px)
+  #page-static-buy-neteller
+    #root
+      .benefits-of-neteller
+        & > div
+          & > div
+            flex-direction: column
+            
+            & > div
+              max-width: 550px
+              margin: 20px auto
+              
+              &:first-child
+                margin-top: 0
+              
+              &:last-child
+                margin-bottom: 0
+                
+      .looking-for-other
+        & > div
+          & > img
+            display: none
+
+@media (max-width: 1040px)
+  #page-static-buy-neteller
+    #root
+      .page-header
+        background: #283c86
+        background: -webkit-linear-gradient(to bottom, #45a14d, #32865c)
+        background: linear-gradient(to bottom, #45a14d, #32865c)
+        
+        & > div
+          flex-direction: column
+          
+          & > div
+            flex: unset
+            
+            &:first-child
+              margin-bottom: 30px
